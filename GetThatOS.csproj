@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75607781-D057-41D6-9A08-27A7084E365B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GetThatOS</RootNamespace>
+    <AssemblyName>GetThatOS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>file%283%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9D56CB644348E0590F61FB6F26EBD3A4C4D90FB4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GetThatOS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Install menus\classmac\1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\1.Designer.cs">
+      <DependentUpon>1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\2.Designer.cs">
+      <DependentUpon>2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\5.Designer.cs">
+      <DependentUpon>5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\8.Designer.cs">
+      <DependentUpon>8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\9.Designer.cs">
+      <DependentUpon>9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\10.0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\10.0.Designer.cs">
+      <DependentUpon>10.0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\101.Designer.cs">
+      <DependentUpon>101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\102.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\102.Designer.cs">
+      <DependentUpon>102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\103.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\103.Designer.cs">
+      <DependentUpon>103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\107.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\107.Designer.cs">
+      <DependentUpon>107.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\108.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\108.Designer.cs">
+      <DependentUpon>108.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\11.Designer.cs">
+      <DependentUpon>11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\110.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\110.Designer.cs">
+      <DependentUpon>110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\111.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\111.Designer.cs">
+      <DependentUpon>111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\112.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\112.Designer.cs">
+      <DependentUpon>112.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\12.Designer.cs">
+      <DependentUpon>12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\13.Designer.cs">
+      <DependentUpon>13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\14.Designer.cs">
+      <DependentUpon>14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\15.Designer.cs">
+      <DependentUpon>15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\Winbetas\Windows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\Winbetas\Windows.Designer.cs">
+      <DependentUpon>Windows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 1.x.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 1.x.Designer.cs">
+      <DependentUpon>windows 1.x.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 2.x.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 2.x.Designer.cs">
+      <DependentUpon>windows 2.x.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 3.x.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 3.x.Designer.cs">
+      <DependentUpon>windows 3.x.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\GetThatOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\GetThatOS.Designer.cs">
+      <DependentUpon>GetThatOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main\splahs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\splahs.Designer.cs">
+      <DependentUpon>splahs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\ClassicMacOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\ClassicMacOS.Designer.cs">
+      <DependentUpon>ClassicMacOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Linux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Linux.Designer.cs">
+      <DependentUpon>Linux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MacIPSW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MacIPSW.Designer.cs">
+      <DependentUpon>MacIPSW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MacOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MacOS.Designer.cs">
+      <DependentUpon>MacOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\More.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\More.Designer.cs">
+      <DependentUpon>More.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MS-Dos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MS-Dos.Designer.cs">
+      <DependentUpon>MS-Dos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Winbetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Winbetas.Designer.cs">
+      <DependentUpon>Winbetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\winserver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\winserver.Designer.cs">
+      <DependentUpon>winserver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Menus\WIndows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\WIndows.Designer.cs">
+      <DependentUpon>WIndows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Install menus\classmac\1.resx">
+      <DependentUpon>1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\2.resx">
+      <DependentUpon>2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\5.resx">
+      <DependentUpon>5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\8.resx">
+      <DependentUpon>8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\9.resx">
+      <DependentUpon>9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\10.0.resx">
+      <DependentUpon>10.0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\101.resx">
+      <DependentUpon>101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\102.resx">
+      <DependentUpon>102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\103.resx">
+      <DependentUpon>103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\107.resx">
+      <DependentUpon>107.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\108.resx">
+      <DependentUpon>108.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\11.resx">
+      <DependentUpon>11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\110.resx">
+      <DependentUpon>110.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\111.resx">
+      <DependentUpon>111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\112.resx">
+      <DependentUpon>112.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\12.resx">
+      <DependentUpon>12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\13.resx">
+      <DependentUpon>13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\14.resx">
+      <DependentUpon>14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\15.resx">
+      <DependentUpon>15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\Winbetas\Windows.resx">
+      <DependentUpon>Windows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\Windows\windows 1.x.resx">
+      <DependentUpon>windows 1.x.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\Windows\windows 2.x.resx">
+      <DependentUpon>windows 2.x.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\Windows\windows 3.x.resx">
+      <DependentUpon>windows 3.x.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\GetThatOS.resx">
+      <DependentUpon>GetThatOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main\splahs.resx">
+      <DependentUpon>splahs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\ClassicMacOS.resx">
+      <DependentUpon>ClassicMacOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Linux.resx">
+      <DependentUpon>Linux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MacIPSW.resx">
+      <DependentUpon>MacIPSW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MacOS.resx">
+      <DependentUpon>MacOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\More.resx">
+      <DependentUpon>More.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MS-Dos.resx">
+      <DependentUpon>MS-Dos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Winbetas.resx">
+      <DependentUpon>Winbetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\winserver.resx">
+      <DependentUpon>winserver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Menus\WIndows.resx">
+      <DependentUpon>WIndows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GetThatOS_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="file%283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Install menus\Linux\" />
+    <Folder Include="Install menus\MS-Dos\" />
+    <Folder Include="Install menus\Winserver\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
