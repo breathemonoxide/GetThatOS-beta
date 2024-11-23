@@ -17,8 +17,11 @@ using System.IO;
 
 namespace GetThatOS
 {
+
     public partial class GetThatOS : Form
     {
+
+        bool isbeta = true;
         public GetThatOS()
         {
             InitializeComponent();
