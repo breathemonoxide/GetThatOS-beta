@@ -10,12 +10,15 @@ namespace GetThatOS.main
 
     public partial class setting : Form
     {
-        bool isbeta = false;
+        bool isbeta = true;
         public setting()
         {
             InitializeComponent();
+            
+            
             if (isbeta )
             {
+                button1.Text = "Update beta";
                 button4.Enabled = false;
                 button4.Text = "Already in beta!";
             }
@@ -32,18 +35,40 @@ namespace GetThatOS.main
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string updater = "https://github.com/breathemonoxide/GetThatOS/releases/latest/download/GetThatOSUpdater.exe";
-            string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
-            string fileName = "GetThatOSUpdater.exe";
-            string fullPath = Path.Combine(directoryPath, fileName);
 
-            using (WebClient webclient = new WebClient())
+            if (isbeta)
             {
-                webclient.DownloadFile(updater, fullPath);
+                string updater1 = "https://github.com/breathemonoxide/GetThatOS-beta/releases/latest/download/GetThatOSUpdater.exe";
+                string directoryPath1 = AppDomain.CurrentDomain.BaseDirectory;
+                string fileName1 = "GetThatOSUpdater.exe";
+                string fullPath1 = Path.Combine(directoryPath1, fileName1);
+
+                using (WebClient webclient1 = new WebClient())
+                {
+                    webclient1.DownloadFile(updater1, fullPath1);
+                }
+                MessageBox.Show("Get that OS updater will start when you click ok");
+                System.Diagnostics.Process.Start(fullPath1);
+                System.Windows.Forms.Application.Exit();
             }
-            MessageBox.Show("Get that OS updater will start when you click ok");
-            System.Diagnostics.Process.Start(fullPath);
-            System.Windows.Forms.Application.Exit();
+            else
+            {
+
+
+
+                string updater = "https://github.com/breathemonoxide/GetThatOS/releases/latest/download/GetThatOSUpdater.exe";
+                string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
+                string fileName = "GetThatOSUpdater.exe";
+                string fullPath = Path.Combine(directoryPath, fileName);
+
+                using (WebClient webclient = new WebClient())
+                {
+                    webclient.DownloadFile(updater, fullPath);
+                }
+                MessageBox.Show("Get that OS updater will start when you click ok");
+                System.Diagnostics.Process.Start(fullPath);
+                System.Windows.Forms.Application.Exit();
+            }
         }
 
         private void setting_Load(object sender, EventArgs e)
