@@ -99,7 +99,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 5;
-            this.label4.Text = "V0.1.3-1B";
+            this.label4.Text = "V0.1.3-2B";
             // 
             // button3
             // 
