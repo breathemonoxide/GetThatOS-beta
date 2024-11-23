@@ -5,3 +5,4 @@
 
 Report any bugs as either an issue or in the [discord](https://discord.gg/dS6d7PET6W)
 
+Betas may have different system requirements than the main releases 
