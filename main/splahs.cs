@@ -65,8 +65,7 @@ namespace GetThatOS.main
             }
 
             
-            Thread.Sleep(4500);
-            MessageBox.Show("THIS BUILD (22/11/2024) IS A BETA, THERE WLL BE BUGS!");
+            Thread.Sleep(2500);
             GetThatOS getos = new GetThatOS();
             this.Hide();
             Thread.Sleep(400);

@@ -1,17 +1,8 @@
 ﻿using GetThatOS.settings;
 using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GetThatOS.main
@@ -75,7 +66,6 @@ namespace GetThatOS.main
 
             if (result == DialogResult.OK)
             {
-                // Perform the action for OK
                 string updater = "https://github.com/breathemonoxide/GetThatOS-beta/releases/latest/download/GetThatOSUpdater.exe";
                 string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
                 string fileName = "GetThatOSUpdater.exe";
@@ -88,13 +78,10 @@ namespace GetThatOS.main
                 MessageBox.Show("The Beta Updater will now start up");
                 System.Diagnostics.Process.Start(fullPath);
                 System.Windows.Forms.Application.Exit();
-                // Add your download logic here
             }
             else if (result == DialogResult.Cancel)
             {
-                // Perform the action for Cancel
                 Console.WriteLine("aborted beta programme");
-                // Add logic to cancel the operation here
             }
         }
 
