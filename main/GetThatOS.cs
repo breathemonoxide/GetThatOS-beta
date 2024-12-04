@@ -21,7 +21,7 @@ namespace GetThatOS
     public partial class GetThatOS : Form
     {
 
-        bool isbeta = true;
+        bool isbeta = false;
         public GetThatOS()
         {
             InitializeComponent();
@@ -57,6 +57,17 @@ namespace GetThatOS
 
 
                 RunAfterRender();
+
+                if (isbeta)
+                {
+                    label1.Text = "BETA \n 0.2.4";
+                }
+                else
+                {
+                    label1.Text = "";
+                }
+                
+                
             };
 
         }
